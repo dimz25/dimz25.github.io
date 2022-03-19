@@ -4,7 +4,7 @@ title: Home
 
 # Hi!
 
-I'm [Dimitri](/about), welcome on my website.
+I'm [Dimitri](/me), welcome on my website.
 
 I mainly use this space to collect thoughts and ideas in the form of [notes](/notes).
 
