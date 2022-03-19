@@ -1,0 +1,25 @@
+{% assign images = {{include.tgal}} %}
+<div class="gallery-wrap">
+{% for photo in images %}
+<div class="gallery-box">
+    <div class="gallery-boxInner">
+		<a data-fancybox="gallery" data-caption="{{ photo.caption }}" href="{{ photo.url }}">
+			<img src="{{ photo.url }}?tx=q_auto:best,c_fill,w_500,h_500,g_auto" />
+		</a>
+    </div>
+  </div>
+{% endfor %}
+</div>
+<script>
+$('[data-fancybox="gallery"]').fancybox({
+	animationEffect: "fade",
+	arrows: true,
+	toolbar: false,
+	protect: true,
+	transitionEffect: "slide",
+	transitionDuration: 750,
+	clickContent: function(current, event) {
+		return current.type === "image" ? "next" : false;
+	}
+});
+</script>

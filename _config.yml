@@ -1,0 +1,27 @@
+collections:
+    projects:
+      output: true
+    posts:
+      permalink: /notes/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+permalink: /:collection/:slug/
+#paginate: 10
+#paginate_path: /blog/page:num/
+
+#plugins: [jekyll-paginate]

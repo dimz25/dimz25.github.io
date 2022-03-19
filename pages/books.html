@@ -1,0 +1,50 @@
+---
+title: Books
+permalink: /books/
+---
+{% assign sorted = site.data.books | sort: 'year' | reverse %}
+{% assign thisYear = sorted[0].year |  truncate: 4, "" %}
+{% assign prevYear = '1980' %}
+
+<h1>Books</h1>
+<p>This page contains a listing of most of the books I've read. It's main purpose is to have a visual overview of what books I've been reading. As you might notice I have a knack for science fiction books.</p>
+{% for book in sorted %}
+
+  {% assign thisYear = book.year |  truncate: 4, "" %}
+
+  {% if thisYear != prevYear %}
+
+    {% if forloop.first != true %}
+    </div>
+    {% endif %}
+
+  <h2 class="line">{{ thisYear }}</h2>
+  <div class="sep-line"></div>
+  <div class="grid-container">
+
+  {% endif %}
+
+  <div class="grid-item">
+
+    {% if book.cover_url %}
+    <div class="img-holder">
+    <img class="book" src="{{ book.cover_url }}">
+    </div>
+    {% endif %}
+
+    <ul>
+      <li>{{ book.title }}</li>
+      {% if book.subtitle %}
+      <li class="author">{{ book.subtitle }}</li>
+      {% endif %}
+      <li class="author">{{ book.author }}</li>
+    </ul>
+
+  </div>
+
+  {% assign prevYear = book.year | truncate: 4, "" %}
+
+  {% if forloop.last == true %}
+  </div>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,7 @@
+{% assign images = {{include.tgal}} %}
+
+<section class="photos-container">
+{% for photo in images %}
+  <a data-fancybox="gallery" data-caption="{{ photo.caption }}" href="{{ photo.url }}"><img class="rect-img" src="{{ photo.url-thumb }}"></a>
+{% endfor %}
+</section>

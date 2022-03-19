@@ -1,0 +1,9 @@
+{% assign images = {{include.tgal}} %}
+
+<div class="row">
+{% for photo in images %}
+  <div class="column">
+      <img src="{{ photo.url-thumb }}">
+  </div>
+{% endfor %}
+</div>

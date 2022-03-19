@@ -1,0 +1,22 @@
+<header id="site-header">
+  <div id="site-title"><a href="/">Dimitri Belfiore</a></div>
+  <nav>
+	<ul id="site-nav-links" class="slide-menu">
+	{% for item in site.data.navigation %}
+	{% if item.type == "label" %}
+		<li class="label"><a href="{{ item.link }}">{{ item.name }}</a></li>
+	{% endif %}
+	{% if item.type == "photo-item" %}
+		<li class="photo-item"><a href="{{ item.link }}">{{ item.name }}</a></li>
+	{% endif %}		
+    {% endfor %}
+	</ul>
+	<ul id="site-nav-links">
+    {% for item in site.data.navigation %}
+	{% if item.type == "permanent" %}
+		<li><a href="{{ item.link }}">{{ item.name }}</a></li>
+	{% endif %}
+    {% endfor %}
+    </ul>
+  </nav>
+</header>

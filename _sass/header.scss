@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Main structure elements */
+
+html, body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  color: #333;
+  background-color: #eee;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 1fr minmax(300px,1600px) 1fr;
+}
+
+header#site-header{
+  grid-column: 2 / 3;
+}
+
+main{
+  grid-column: 2 / 3;
+  margin: 0 48px;
+}
+
+footer{
+  grid-column: 2 / 3;
+}
+
+#site-header{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin: 36px 48px;
+}
+
+/* Styling of the header elements */
+#site-title{
+  font-size: 2.8rem;
+}
+
+#site-header a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+}
+
+#site-nav-links li{
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.8rem;
+}
+
+/* Styling for the sliding menu */
+
+.slide-menu {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: none;
+  /*border: 1px solid black;*/
+  padding-right: 0px;
+  transition: padding-right 0.2s ease;
+  float:left;
+  width : 150px; /* initial length of sliding menu*/
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+.slide-menu:hover {
+  pointer-events: auto;
+  padding-right: 400px; /* open length of sliding menu*/
+  transition: padding-right 0.2s ease;
+}
+.label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.photo-item a{
+	font-size: 1.5rem;
+}
+
+/* Main styling elements */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  margin-top:0;
+  margin-bottom: 1.6rem;
+}
+
+strong{
+  color: #666;
+}
+
+ul{
+display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+article{
+  margin-top: 0px;
+  padding: 0px 0px;
+}
+
+article > header {
+	width: 800px; /* article width */
+}
+article > p {
+	width: 800px; /* article width */
+}
+
+img{
+max-width: 100%;
+}
+
+/* Styling for the footer */
+
+footer{
+  text-align: center;
+  margin-top:50px;
+}
+
+footer p{
+  font-size: 1.2rem;
+}
+
+/* Styling fot the books page */
+
+.line{
+  border-bottom: 1px solid #CCC;
+  margin: 40px 0 20px 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+  max-width: 960px;
+}
+
+.grid-item ul {
+  font-size: 1.4rem;
+}
+
+.author{
+  font-size: 1.2rem;
+}
+
+.img-holder{
+  max-width: 160px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  border: 1px #000000 solid;
+  margin-bottom: 6px;
+}
+
+.book {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
+  width: 160px;
+}
+
+/* Styling for index lists on pages */
+
+.page-list{
+  font-size: 1.8rem;
+}
+
+ul.page-list{
+  list-style-type:disc;
+  list-style-position: inside;
+}
+
+.page-list li{
+  padding: 5px 0px;
+}
+
+.page-list li a{
+    text-decoration:none;
+}
+
+/* Styling for a photo gallery */
+
+.photos-container
+{
+/*
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 10px 0px;
+ */
+ display: flex;
+ flex-flow: row wrap;
+ align-items: center;
+ justify-content: left;
+}
+
+.photos-container .square{
+	/*width: 33%;
+	overflow: hidden;
+	margin: 10px;*/
+}
+
+.photos-container img{
+/*
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+ */
+  height: 300px;
+  max-width: 500px;
+  padding: 10px 10px 0 0;
+  flex: 1 auto;
+}
+
+
+/* Styling for the project page */
+
+.project-title{
+  margin-bottom:5px;
+}
+
+.project-description{
+  font-size: 2.2rem;
+  color: #999;
+  margin-top: 0px;
+}
+
+/* Styling for the post page */
+
+.post-title{
+  margin-bottom:5px;
+}
+
+.post-date{
+  margin-top: 0px;
+}
+
+/* Styling for an image loaded via Jekyll includes */
+
+.image{
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.image figcaption{
+  padding-top: 2px;
+  font-size: 1.3rem;
+}
+
+
+/* Styling for old posts page */
+
+.post-title{
+  margin-bottom: 0;
+}
+
+.post-meta{
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+/* Styling for pagination (currently deactivated) */
+
+.pagination a, .pagination span {
+    font-size: 1.5rem;
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a {
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+ }
+
+.pagination {
+    margin-top: 40px;
+    text-align: center;
+ }
+
+/* Styling for masonry (not working yet) */
+
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+ }
+
+ .column {
+   flex: 32%;
+   max-width: 32%;
+   padding: 0 4px;
+ }
+
+ .column img {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+ }
+
+/* Styling for adaptive layout */
+
+@media screen and (max-width: 640px) {
+
+  #site-header {
+    display: block; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  #site-nav-links li:first-child{
+    padding: 0 15px 0 2px;
+    /*font-size: 1.4rem;*/
+  }
+
+  .img-holder{
+    max-width: 100px;
+    height: 150px;
+  }
+}
+
+/* Styling for fancybox */
+
+.fancybox-bg
+{
+    background-color: white !important;
+    opacity: 1 !important;
+}
+
+/*
+CSS for new gallery
+*/
+.gallery-wrap {
+   overflow: hidden;
+   margin: 0px;
+}
+.gallery-box {
+   float: left;
+   position: relative;
+   width: 33.3%;
+   padding-bottom: 33.3%;
+}
+.gallery-boxInner {
+   position: absolute;
+   left: 0px;
+   right: 10px;
+   top: 0px;
+   bottom: 10px;
+   overflow: hidden;
+}
+.gallery-boxInner img {
+   width: 100%;
+}
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .gallery-box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .gallery-box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .gallery-box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .gallery-box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+
+/* Zoom in-out effect */
+.gallery-boxInner {
+  overflow: hidden;
+}
+
+.gallery-boxInner img {
+  transform: scale(1.05);
+  transition: transform .3s ease-in-out;
+}
+
+.gallery-boxInner img:hover {
+  transform: scale(1.1);
+}

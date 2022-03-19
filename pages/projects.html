@@ -1,0 +1,11 @@
+---
+title: Projects
+permalink: /projects/
+---
+<h1>Projects</h1>
+<p>Some projects I'm working on</p>
+<ul class="page-list">
+{% for project in site.projects %}
+<li><a href="{{ project.url }}">{{ project.title }}</a></li>
+{% endfor %}
+</ul>
