@@ -1,8 +1,11 @@
 - name: Photography
   link: #
   type: label
-- name: Analog
-  link: /projects/analog
+- name: Snapshots
+  link: /projects/snapshots
+  type: photo-item
+- name: Vagabonding
+  link: /projects/vagabonding
   type: photo-item
 - name: Bajau
   link: /projects/bajau-laut
