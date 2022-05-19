@@ -16,7 +16,8 @@ And there's also a list of the [books](/books) I read.
 
 I wish you an excellent day!
 
+<!--
 {% include image.html url="/assets/images/scottish.jpg" description="Scottish landscape" %}
 
 {% include image.html url="/assets/images/geese.jpg" description="Geese flying out" %}
-
+-->
