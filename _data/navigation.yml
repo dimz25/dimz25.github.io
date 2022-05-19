@@ -12,7 +12,7 @@
   type: photo-item
 - name: Portraits
   link: /projects/portraits
-  type: photo-item
+  type: photo-item 
 - name: Notes
   link: /notes
   type: permanent
