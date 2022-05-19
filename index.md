@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Hi!
+# Hey!
 
 I'm [Dimitri](/me), welcome on my website.
 
