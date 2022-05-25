@@ -4,11 +4,16 @@ title: Home
 
 Soon... hopefully
 
-<ul class="page-list">
 {% for post in site.posts %}
-<li><a href="{{ post.url }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></li>
+<article class="project">
+  <header>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-date"><small>{{ page.date | date_to_string }}</small></p>
+  </header>
+{{ content }}
+</article>
 {% endfor %}
-</ul>
+
 
 <!--
 # Hey!
