@@ -7,8 +7,8 @@ Soon... hopefully
 {% for post in site.posts %}
 <article class="project">
   <header>
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-date"><small>{{ page.date | date_to_string }}</small></p>
+    <h1 class="post-title">{{ post.title }}</h1>
+    <p class="post-date"><small>{{ post.date | date_to_string }}</small></p>
   </header>
 {{ content }}
 </article>
