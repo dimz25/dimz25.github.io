@@ -13,9 +13,9 @@
 #- name: Portraits
 #  link: /projects/portraits
 #  type: photo-item 
-#- name: Notes
-#  link: /notes
-#  type: permanent
+- name: Notes
+  link: /notes
+  type: permanent
 - name: Me
   link: /me
   type: permanent
