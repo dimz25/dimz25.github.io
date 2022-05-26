@@ -13,7 +13,7 @@ html, body{
 
 #container{
   display: grid;
-  grid-template-columns: 1fr minmax(300px,1600px) 1fr;
+  grid-template-columns: 1fr minmax(300px,1200px) 1fr;
 }
 
 header#site-header{
@@ -37,6 +37,7 @@ footer{
 }
 
 /* Styling of the header elements */
+
 #site-title{
   font-size: 2.8rem;
 }
@@ -53,35 +54,6 @@ footer{
   font-size: 1.8rem;
 }
 
-/* Styling for the sliding menu */
-
-.slide-menu {
-  display: inline-block;
-  cursor: pointer;
-  pointer-events: none;
-  /*border: 1px solid black;*/
-  padding-right: 0px;
-  transition: padding-right 0.2s ease;
-  float:left;
-  width : 150px; /* initial length of sliding menu*/
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1.4rem;
-}
-.slide-menu:hover {
-  pointer-events: auto;
-  padding-right: 600px; /* open length of sliding menu*/
-  transition: padding-right 0.2s ease;
-}
-.label {
-  display: inline-block;
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-.photo-item a{
-	font-size: 1.5rem;
-}
 
 /* Main styling elements */
 
@@ -120,15 +92,15 @@ display: inline-block;
 }
 
 article{
-  margin-top: 0px;
-  padding: 0px 0px;
+margin: 0 auto;
+margin-bottom: 6px;
+padding: 48px 48px 48px 48px;
+max-width: 1200px;
+background-color: white;
 }
 
-article > header {
-	width: 800px; /* article width */
-}
-article > p {
-	width: 800px; /* article width */
+.meta{
+	margin-bottom: 72px;
 }
 
 img{
@@ -256,6 +228,11 @@ ul.page-list{
 
 .post-title{
   margin-bottom:5px;
+}
+
+.post-title a {
+	text-decoration:none;
+	color: black;
 }
 
 .post-date{
@@ -423,4 +400,63 @@ CSS for new gallery
 
 .gallery-boxInner img:hover {
   transform: scale(1.1);
+}
+
+
+/* Styling for gallery in a list of photos */
+
+.gallery-list {
+margin-bottom: 36px;
+text-align: center;
+}
+
+.gallery-list:last-of-type {
+margin-bottom: 0px;
+}
+
+
+.gallery-list img {
+	max-height:800px;
+}
+
+.gallery-list img{
+transform: scale(1);
+transition: transform .3s ease-in-out;
+opacity: 1;
+transition: opacity .3s ease-in-out;
+}
+
+.gallery-list img:hover{
+  transform: scale(1);
+  opacity: 0.85;
+}
+
+/* Styling for the sliding menu */
+
+.slide-menu {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: none;
+  /*border: 1px solid black;*/
+  padding-right: 0px;
+  transition: padding-right 0.2s ease;
+  float:left;
+  width : 110px; /* initial length of sliding menu*/
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+.slide-menu:hover {
+  pointer-events: auto;
+  padding-right: 220px; /* open length of sliding menu*/
+  transition: padding-right 0.2s ease;
+}
+.label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.photo-item a{
+	font-size: 1.5rem;
 }

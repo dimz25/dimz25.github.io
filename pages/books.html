@@ -1,6 +1,7 @@
 ---
 title: Books
 permalink: /books/
+published: false
 ---
 {% assign sorted = site.data.books | sort: 'year' | reverse %}
 {% assign thisYear = sorted[0].year |  truncate: 4, "" %}

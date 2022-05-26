@@ -1,21 +1,18 @@
-- name: Photography
+- name: Projects
   link: #
   type: label
-- name: Snapshots
-  link: /projects/snapshots
-  type: photo-item
-- name: Vagabonding
-  link: /projects/vagabonding
-  type: photo-item
-- name: Bajau
+#- name: Snapshots
+#  link: /projects/snapshots
+#  type: photo-item
+- name: Aku Bajau
   link: /projects/bajau-laut
   type: photo-item
-- name: Portraits
-  link: /projects/portraits
-  type: photo-item 
-- name: Notes
-  link: /notes
-  type: permanent
+#- name: Portraits
+#  link: /projects/portraits
+#  type: photo-item 
+#- name: Notes
+#  link: /notes
+#  type: permanent
 - name: Me
   link: /me
   type: permanent

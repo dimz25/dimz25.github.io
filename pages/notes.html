@@ -3,10 +3,15 @@ title: Notes
 permalink: /notes/
 published: true
 ---
-<h1>Notes</h1>
-<p>A visual diary, a journal, a blog, a space for me to take notes.</p>
-<ul class="page-list">
-{% for post in site.posts %}
-<li><a href="{{ post.url }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></li>
-{% endfor %}
-</ul>
+
+<header>
+	<h1 class="project-title">Notes</h1>
+	<p class="project-description">A visual diary, a journal, a blog, a space for me to take notes.</p>
+</header>
+<article>
+	<ul class="page-list">
+	{% for post in site.posts %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></li>
+	{% endfor %}
+	</ul>
+</article>
