@@ -389,7 +389,7 @@ CSS for new gallery
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
-   .gallery-box {
+   .gallery-box { 
       width: 100%;
       padding-bottom: 100%;
    }
