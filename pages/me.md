@@ -11,7 +11,7 @@ I'm a self-taught (and always learning) photographer currently residing in Belgi
 
 ### 2022
 * Focus Geraardsbergen Foto Expo - 71st Edition (17 june - 19 june)
-* Parcours d'artistes Enghien (4 june - 5 june)
+* Ehibition at 'Ma Ferme' in Enghien (4 june - 5 june)
 * Expo Focus Artistiek & Creatief 2022 (23 april 2022 to 23 october 2022)
 
 ### 2021
