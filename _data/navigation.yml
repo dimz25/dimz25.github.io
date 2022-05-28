@@ -16,3 +16,6 @@
 - name: Me
   link: /me
   type: permanent
+- name: Contact
+  link: /contact
+  type: permanent
