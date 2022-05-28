@@ -40,6 +40,13 @@ footer{
 
 #site-title{
   font-size: 2.8rem;
+  white-space: nowrap;
+}
+
+#site-subtitle{
+ font-size: 1.4rem;
+ margin-left: 1.0rem;
+ white-space: nowrap;
 }
 
 #site-header a {
@@ -94,7 +101,7 @@ display: inline-block;
 article{
 margin: 0 auto;
 margin-bottom: 6px;
-padding: 48px 48px 48px 48px;
+padding: 36px 36px 36px 36px;
 max-width: 1200px;
 background-color: white;
 }
@@ -310,7 +317,7 @@ ul.page-list{
 
 /* Styling for adaptive layout */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 
   #site-header {
     display: block; /* The width is 100%, when the viewport is 800px or smaller */
@@ -325,6 +332,20 @@ ul.page-list{
     max-width: 100px;
     height: 150px;
   }
+  
+  article{
+margin: 0 auto;
+margin-bottom: 6px;
+padding: 24px 24px 24px 24px;
+max-width: 1200px;
+background-color: white;
+
+.gallery-list {
+margin-bottom: 12px;
+text-align: center;
+}
+}
+  
 }
 
 /* Styling for fancybox */
@@ -406,7 +427,7 @@ CSS for new gallery
 /* Styling for gallery in a list of photos */
 
 .gallery-list {
-margin-bottom: 36px;
+margin-bottom: 24px;
 text-align: center;
 }
 
