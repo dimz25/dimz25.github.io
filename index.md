@@ -35,7 +35,7 @@ This is what I'm doing [now](/now).
 And there's also a list of the [books](/books) I read.
 
 I wish you an excellent day!
--->
+
 <!--
 {% include image.html url="/assets/images/scottish.jpg" description="Scottish landscape" %}
 
