@@ -26,9 +26,13 @@ title: Home
 
 I'm [Dimitri](/me), welcome on my website.
 
-I mainly use this space to collect thoughts and ideas and share some of my photographs in the form of [notes](/notes).
+I mainly use this space to collect thoughts and ideas and share them in the form of [notes](/notes). You'll also find some (not many) photoprojects I'm working on at the moment.
 
-You can see some [photoprojects](/projects) I'm working on.
+## Projects
+
+* [Bajau Laut](projects/bajau-laut)
+* [People](projects/portraits)
+* [Analog](projects/analog)
 
 This is what I'm doing [now](/now).
 
