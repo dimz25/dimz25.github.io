@@ -32,7 +32,7 @@ I mainly use this space to collect thoughts and ideas and share them in the form
 
 * [Bajau Laut](projects/bajau-laut)
 * [People](projects/portraits)
-* [Analog](projects/analog)
+* [Snapshots](projects/snapshots)
 
 This is what I'm doing [now](/now).
 
