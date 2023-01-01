@@ -101,13 +101,31 @@ strong{
   color: #666;
 }
 
+/* General styling of unordered lists */
+ul{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	font-size: 1.6rem;
+}
+
+
+
 
 /* this is mainly to style navigation, which is treated as a list*/
-ul{
-display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+ul#site-nav-links{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav-links{
+	font-size: 1.6rem;
 }
 
 /*article encapsulates most of the pages content*/
@@ -129,9 +147,7 @@ article h3{
 	color: #999;
 }
 
-li{
-	font-size: 1.6rem;
-}
+
 
 
 /*the text beneath the article, tags and so*/
