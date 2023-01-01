@@ -7,12 +7,12 @@
 - name: Aku Bajau
   link: /projects/bajau-laut
   type: photo-item
-#- name: Portraits
-#  link: /projects/portraits
-#  type: photo-item 
-#- name: Notes
-#  link: /notes
-#  type: permanent
+- name: Portraits
+  link: /projects/portraits
+  type: photo-item 
+- name: Notes
+  link: /notes
+  type: permanent
 - name: Me
   link: /me
   type: permanent
