@@ -16,7 +16,7 @@
 	<ul id="site-nav-links">
     {% for item in site.data.navigation %}
 	{% if item.type == "permanent" %}
-		<li><a href="{{ item.link }}">{{ item.name }}</a></li>
+		<li><a class="nav-links" href="{{ item.link }}">{{ item.name }}</a></li>
 	{% endif %}
     {% endfor %}
     </ul>
