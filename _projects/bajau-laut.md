@@ -1,6 +1,7 @@
 ---
 title: Aku Bajau
 description: A photoproject documenting the lives of the Bajau Laut
+layout: page
 ---
 
 The Bajau Laut are a friendly and fascinating community. Literally living on the water, they build houses on stilts in the shallow waters of the Celebes sea where they move around in their wooden boats. They're mainly fishers and live from what the sea has to offer.

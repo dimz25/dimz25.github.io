@@ -1,8 +1,9 @@
 ---
 title: Me
 permalink: /me/
-layout: project
+layout: page
 ---
+
 
 ## About
 I'm a self-taught (and always learning) photographer currently residing in Belgium. My work mainly focusses on travel, daily-life and street photography. I'm also an administrating member of [Fotokring Focus Geraardsbergen](https://www.focusgeraardsbergen.be).

@@ -8,12 +8,12 @@ html, body{
   font-weight: 400;
   font-size: 62.5%;
   color: #333;
-  background-color: #eee;
+  background-color: #efefef;
 }
 
 #container{
   display: grid;
-  grid-template-columns: 1fr minmax(300px,1200px) 1fr;
+  grid-template-columns: 1fr minmax(300px,960px) 1fr;
 }
 
 header#site-header{
@@ -44,7 +44,7 @@ footer{
 }
 
 #site-subtitle{
- font-size: 1.4rem;
+ font-size: 1.8rem;
  margin-left: 1.0rem;
  white-space: nowrap;
 }
@@ -55,10 +55,16 @@ footer{
   color: #333;
 }
 
+#site-nav-links{
+	/*adjusts vertical alignment of navigation menu*/
+	padding-top: 5px;
+}
+
+
 #site-nav-links li{
   display: inline-block;
   padding: 0 15px;
-  font-size: 1.8rem;
+  font-size: 2.0rem;
 }
 
 .social-icons{
@@ -76,25 +82,33 @@ footer{
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.0rem;
+  color:#333;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
   color: #666;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  	margin-top: 6rem;
 }
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.0rem;
 	margin-bottom: 0.3rem;
+}
+
+h6 {
+  font-size: 2.2rem;
+  color: #999;
+  margin-top: 0px;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   margin-top:0;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.0rem;
 }
 
 strong{
@@ -104,37 +118,67 @@ strong{
 /* General styling of unordered lists */
 ul{
 	display: inline-block;
-	list-style-type: none;
-	margin: 0;
+	list-style-type: disc;
+	list-style-position: inside;
 	padding: 0;
+}
+
+
+h2 ul{
+	display: inline-block;
+	list-style-type: disc;
+	list-style-position: inside;
+	padding: 0;
+	text-indent: -27px; /* key property */
+    margin-left: 27px; /* key property */
 }
 
 li{
-	font-size: 1.6rem;
+	font-size: 2.0rem;
+}
+
+a{
+	text-decoration: none;
+	font-weight: 600;
+	color: #666;
+}
+
+a:hover{
+	text-decoration: underline;
+	
+}
+
+blockquote{
+
 }
 
 
+/*PAGE LAYOUTS*/
 
-
-/* this is mainly to style navigation, which is treated as a list*/
-ul#site-nav-links{
-	display: inline-block;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+article{
+	margin: 0 auto;
+	margin-bottom: 6px;
 }
 
-li.nav-links{
-	font-size: 1.6rem;
+.flat h3{
+	margin-top: 4rem;
+	
 }
+
 
 /*article encapsulates most of the pages content*/
-article{
-margin: 0 auto;
-margin-bottom: 6px;
-padding: 36px 36px 36px 36px;
-max-width: 1200px;
-background-color: white;
+article.framed{
+	padding: 36px 36px 36px 36px;
+	max-width: 960px;
+	background-color: white;
+}
+
+article h2{
+	  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  color: #666;
+  margin-bottom: 1rem;
+  	margin-top: 2rem;
 }
 
 /*this mostly targets the lists on the me page*/
@@ -307,11 +351,11 @@ ul.page-list{
 
 /* Styling for the project page */
 
-.project-title{
+.page-title{
   margin-bottom:5px;
 }
 
-.project-description{
+.page-description{
   font-size: 2.2rem;
   color: #999;
   margin-top: 0px;

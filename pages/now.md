@@ -1,8 +1,8 @@
 ---
 title: Now
 permalink: /now/
+layout: page
 ---
-# Now
 
 Right now I'm in the process of mastering the technicalities of analog photography.
 I started developing black and white film at home, soon followed by color film.

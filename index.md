@@ -1,5 +1,6 @@
 ---
 title: Home
+layout: flat
 ---
 
 <!--
@@ -22,23 +23,20 @@ title: Home
 {% endfor %}
 -->
 
-# Hi!
+# Hi! 
 
-I'm [Dimitri](/me), welcome on my website.
+I'm [Dimitri](/me), welcome on my website. I mainly use this space to collect thoughts and ideas and share them in the form of [notes](/notes). You'll also find some (not many) photoprojects I'm working on at the moment.
 
-I mainly use this space to collect thoughts and ideas and share them in the form of [notes](/notes). You'll also find some (not many) photoprojects I'm working on at the moment.
+### Projects
 
-## Projects
+* A photoproject where I document my visits in Semporna and the surrounding [Bajau Laut](projects/bajau-laut) communities
+* Some [portraits](projects/portraits) I took from family, friends and stranger-friends
+* Random [snapshots](projects/snapshots)
 
-* [Bajau Laut](projects/bajau-laut)
-* [People](projects/portraits)
-* [Snapshots](projects/snapshots)
+### More stuff
 
-This is what I'm doing [now](/now).
-
-And there's also a list of the [books](/books) I read.
-
-I wish you an excellent day!
+You can visit my "[now](/now)" page with the stuff I'm focussing on right now.
+And there's also a list of some of the more interesting [books](/books) I read.
 
 <!--
 {% include image.html url="/assets/images/scottish.jpg" description="Scottish landscape" %}

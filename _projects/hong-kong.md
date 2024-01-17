@@ -1,6 +1,7 @@
 ---
 title: Hong Kong
 description: A collection of pictures I took in Hong Kong
+layout: page
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at blandit ligula. Pellentesque ullamcorper purus diam, at blandit neque laoreet et. Donec felis ligula, porta at suscipit id, accumsan a odio. Sed sollicitudin turpis nec ligula consequat, at malesuada erat sagittis. Vivamus finibus lacus nunc. Nullam placerat consequat nibh. Donec sollicitudin ac augue at aliquet.
